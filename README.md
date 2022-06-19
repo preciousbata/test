@@ -1,6 +1,4 @@
-# Test
+# Test UI from NCK
 
-Test UI from NCK
 
-## Getting Started
 
