@@ -23,14 +23,16 @@ class MyApp extends StatelessWidget {
         // This is the theme of your application.
         primarySwatch: Colors.green,
       ),
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
       routes: {
-        '/' :(_) => const HomeScreen(),
-        '/topup': (_) => const TopUpScreen(),
-        '/purchase':(_) => const PurchaseOrderScreen(),
-        '/delivery':(_) => const DeliveryScreen(),
-        '/checkout': (_) => const CheckoutScreen(),
-        '/payment': (_) => const PaymentScreen(),
-        '/confirmation':(_) => const ConfirmationScreen(),
+        '/' :(context) => const HomeScreen(),
+        '/topup': (context) => const TopUpScreen(),
+        '/purchase':(context) => const PurchaseOrderScreen(),
+        '/delivery':(context) => const DeliveryScreen(),
+        '/checkout': (context) => const CheckoutScreen(),
+        '/payment': (context) => const PaymentScreen(),
+        '/confirmation':(context) => const ConfirmationScreen(),
       }
     );
   }
